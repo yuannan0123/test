@@ -1,0 +1,172 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  background: #eee;
+  flex-direction: column;
+}
+.header {
+  height: 30px;
+  background: #ff841d;
+  padding: 4px;
+}
+.content {
+  flex: 1;
+  overflow: scroll;
+}
+.header > .logo {
+  float: left;
+}
+.header > .logo > img {
+  height: 15px;
+}
+.header > .download {
+  float: right;
+}
+.header > .download > img {
+  height: 20px;
+}
+.search {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.search > input {
+  text-align: left;
+  height: 24px;
+  width: 83%;
+  background-color: #eee;
+  margin-bottom: 0;
+}
+.search > button {
+  padding: 3px 3px !important;
+}
+.nav {
+  background: #fff;
+  padding: 14px 10px 0;
+}
+.nav a {
+  width: 24%;
+  display: inline-block;
+  text-align: center;
+}
+.nav a img {
+  width: 36%;
+}
+.nav a div {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #333;
+}

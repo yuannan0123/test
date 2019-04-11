@@ -1,0 +1,53 @@
+@import './_reset.less';
+@import './common.less';
+
+// 头部
+.header{
+  >.logo{
+    float: left;
+    >img{
+      height: 15px;
+    }
+  }
+  >.download{
+    float: right;
+    >img{
+      height: 20px;
+    }
+  }
+}
+// 搜索框
+.search{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  >input{
+    text-align:left;
+    height: 24px;
+    width: 83%;
+    background-color: #eee;
+    margin-bottom: 0;
+  }
+  >button{
+    padding: 3px 3px !important;
+  }
+}
+
+// 导航栏
+.nav{
+  background:#fff;
+  padding: 14px 10px 0;
+  a{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    img{
+      width: 36%;
+    }
+    div{
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #333;
+    }
+  }
+}

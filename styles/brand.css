@@ -1,0 +1,202 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  background: #eee;
+  flex-direction: column;
+}
+.header {
+  height: 30px;
+  background: #ff841d;
+  padding: 4px;
+}
+.content {
+  flex: 1;
+  overflow: scroll;
+}
+.header > .logo {
+  float: left;
+}
+.header > .logo > img {
+  height: 15px;
+}
+.header > .download {
+  float: right;
+}
+.header > .download > img {
+  height: 20px;
+}
+.search {
+  background: #fff !important;
+  padding: 12px 10px 32px;
+  height: 40px;
+}
+.search > input {
+  text-align: left;
+  height: 24px;
+  width: 83%;
+  background-color: #eee;
+}
+.search > button {
+  padding: 3px 3px !important;
+}
+.nav {
+  padding: 10px 10px;
+  font-size: 14px;
+}
+.nav ul li {
+  float: left;
+  margin-right: 8px;
+}
+.nav ul li a {
+  color: #333;
+}
+.hot {
+  height: 40px;
+  line-height: 40px;
+  color: #874604;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #f3f3f3;
+  padding-left: 10px;
+}
+.productList {
+  background: #fff;
+}
+.productList .product {
+  padding: 10px 10px 10px 0;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+.productList .product > span {
+  margin-right: 10px;
+  background: #c9c9c9;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.productList .product .title div:nth-of-type(1) {
+  font-size: 14px;
+}
+.productList .product .title div:nth-of-type(2) {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  margin-top: 6px;
+}

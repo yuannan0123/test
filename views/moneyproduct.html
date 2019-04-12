@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>国内折扣</title>
+    <link rel="stylesheet" href="../styles/_reset.css">
+    <link rel="stylesheet" href="../styles/moneyproduct.css">
+    <title>慢慢买</title>
 </head>
+
 <body>
-    
+    <div class="layout">
+        <header>
+            <h1>国内折扣</h1>
+        </header>
+        <main>
+           
+        </main>
+        <footer>
+            <div class="row">
+                <div>
+                    <a href="#">登录</a>
+                </div>
+                <div>
+                    <a href="#">注册</a>
+                </div>
+                <div id="backtop">
+                    <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+                </div>
+            </div>
+            <p> <a href="#" style="color:red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </footer>
+    </div>
 </body>
+ 
 </html>
+<script type="text/template" id="infobox">
+    <h3 class="title">
+            {{productName}}
+        </h3>
+        <div class="info">
+            <span class="mall">{{productFrom}}</span> <span class="addtime" style="margin-right: 4px;">{{productTime}}</span>
+            <span class="author">{{productTips}}</span>
+        </div>
+        <!-- 图文介绍 -->
+        <div class="picintro">
+            {{@productImg2}}
+            <p>{{productInfo2}}</p>
+        </div>
+        <div class="gobuy">
+            前往购买
+        </div>
+        <div style="text-align: center; margin: 20px 10px;">
+            <img src="../images/mmbweixin2.png" style="width: 100%; height: auto;">
+        </div>
+        <div class="reply">
+            <textarea rows="3"></textarea>
+            <div class="clearfix"><span>发表评论 </span></div>
+        </div>
+        <div class="bestnew">
+            最新评论
+        </div>
+        <ul class="comlist">
+            <li class="ui-border-b clearfix">
+                <div class="userimg"><img src="http://home.manmanbuy.com/upface/face/1474348687_162.jpg"></div>
+                <div class="con">
+                    <div class="name clearfix" style="width:100%">
+                        <div class="username fl">Yan1994</div>
+                        <div class="time fr">2016/10/25 14:04:07</div>
+                        <div class="content">吹风机已经便宜的没有底线了</div>
+                    </div>
+                </div>
+            </li>
+            <li class="ui-border-b clearfix">
+                <div class="userimg"><img src="http://bbs.manmanbuy.com/images/face/none.gif"></div>
+                <div class="con">
+                    <div class="name clearfix" style="width:100%">
+                            <div class="username fl">marryme</div>
+                            <div class="time fr">2016/10/25 13:36:56</div>
+                        <div class="content">家里有个1600W的，买了一个这个，冬天头发吹干会快一点</div>
+                    </div>
+                </div>
+            </li>
+            <li class="ui-border-b clearfix">
+                <div class="userimg"><img src="http://home.manmanbuy.com/upface/face/1465864400_162.jpg"></div>
+                <div class="con">
+                    <div class="name clearfix" style="width:100%">
+                            <div class="username fl">h8ufh</div>
+                            <div class="time fr">2016/10/25 13:05:45</div>
+                
+                        <div class="content">19.9价格不多见啊 我记得29就推好价了 刚需可入</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../js/commons.js"></script>
+<script src="../js/moneyproduct.js"></script>
+

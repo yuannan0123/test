@@ -30,4 +30,5 @@ $(function(){
 	$('.page').on('tap','.selpage',function(){
 		$('.pagelist').toggle()
 	})
+
 })

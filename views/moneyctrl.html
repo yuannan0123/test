@@ -60,8 +60,8 @@
             <div>
                 <a href="#">注册</a>
             </div>
-            <div>
-                <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+            <div id="backtop">
+                <a href="javascript:;"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
             </div>
         </div>
         <p> <a href="#" style="color:red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
@@ -74,11 +74,11 @@
 <script type="text/template" id="prolist">
 	{{each result as val index }}
 	<li>
-		<a href="#">
+		<a href="moneyproduct.html?productid={{val.productId}}">
 			{{@val.productImg2}}
 		</a>
 		<div class="media-body">
-			<h5><a href="moneyproduct.html?productid=30">{{val.productName}}</a></h5>
+			<h5><a href="moneyproduct.html?productid={{val.productId}}">{{val.productName}}</a></h5>
 			<p class="price">{{val.productPinkage}}</p>
 			<span class="from">{{val.productFrom}} | {{val.productTime}}</span>
 			<span class="comment">评论:{{val.productComCount.substring(1,2)}}</span>

@@ -1,4 +1,5 @@
 $(function(){
+    
     //解决mui不响应a的click时间。
     $('body').on('tap', 'a', function (e) {
         e.preventDefault()
@@ -34,4 +35,8 @@ $(function(){
             return obj
         }
     })
+    	//点击返回顶部
+	$('#backtop').on('tap',function(){
+		document.documentElement.scrollTop=0
+	})
 })

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../lib/mui/css/mui.css">
   <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.css">
   <link rel="stylesheet" href="../styles/common.css">
-  <link rel="stylesheet" href="../styles/brandTitle.css">
+  <link rel="stylesheet" href="../styles/productlist.css">
   <title>慢慢买</title>
 </head>
 
@@ -33,55 +33,46 @@
       <ul>
         <li><a href="javascript:;">首页 ></a></li>
         <li><a href="javascript:;">全部分类 ></a></li>
-        <li><a href="javascript:;">品牌分类 ></a></li>
+        <li><a href="javascript:;">品牌分类 ></a></li>        
       </ul>
+      <button type="button" class="mui-btn">筛选</button>
     </div>
 
-    <!-- 热门品牌排行 -->
-    <div class="hotBrand">
-      <div>热门品牌排行</div>
-    </div>
-
-    <!-- 品牌列表 -->
-    <div class="brandList">
-
-    </div>
-
-    <!-- 底部 -->
-    <footer>
-      <div class="row">
-        <div>
-          <a href="#">登录</a>
-        </div>
-        <div>
-          <a href="#">注册</a>
-        </div>
-        <div>
-          <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
-        </div>
+    <!-- 产品列表 -->
+    <div class="productList">
+      <div class="product">
+        <div class="left"><img src="../images/11.jpg" alt=""></div>
+        <div class="right">222</div>
       </div>
-      <p> <a href="#" style="color:red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
-      <p>m.manmanbuy.com </p>
-    </footer>
+    </div>
+   
+  <!-- 底部 -->
+  <footer>
+    <div class="row">
+      <div>
+        <a href="#">登录</a>
+      </div>
+      <div>
+        <a href="#">注册</a>
+      </div>
+      <div>
+        <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+      </div>
+    </div>
+    <p> <a href="#" style="color:red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com </p>
+  </footer>
 
+   
   </div>
 
-  <script type="text/template" id="brandTemp">
-  {{each result value index}} 
-      <div class="brand">
-        <a href="brand.html?brandTitleId={{value.brandTitleId}}">{{value.brandTitle}}
-          <span class="mui-icon mui-icon-arrowdown"></span>
-        </a>      
-      </div> 
-      {{/each}}
-</script>
-
+ 
 
   <script src="../lib/mui/js/mui.js"></script>
   <script src="../lib/zepto/zepto.js"></script>
   <script src="../lib/arttemplate/template-web.js"></script>
   <script src="../js/common.js"></script>
-  <script src="../js/brandTitle.js"></script>
+  <!-- <script src="../js/brandTitle.js"></script> -->
 </body>
 
 </html>

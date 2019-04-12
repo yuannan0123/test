@@ -53,14 +53,13 @@
 
   <script type="text/template" id="productTemp">
     {{each result value index}}
-<div class="product">
+      <a href="productlist.html?brandTitleId={{value.brandId}}" class="product">
         <span>{{index+1}}</span>
         <div class="title">
           <div>{{value.brandName}}</div>
           <div>{{value.brandInfo}}</div>
         </div>
-      </div>
-
+      </a>
     {{/each}}
   </script>
 

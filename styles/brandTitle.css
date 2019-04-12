@@ -184,6 +184,8 @@ ul {
   margin-bottom: 6px;
 }
 .brandList .brand a {
+  width: 100%;
+  display: block;
   color: #333;
 }
 .brandList .brand span {

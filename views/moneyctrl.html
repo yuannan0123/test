@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<link rel="stylesheet" href="../styles/_reset.css">
+	<link rel="stylesheet" href="../styles/moneyctrl.css">
+	<title>慢慢买</title>
 </head>
+
 <body>
+	<div class="layout">
+		<header>
+			<h1>省钱控</h1>
+		</header>
+		<main>
+			<div class="prolist">
+				<li>
+					<a href="#">
+						<img
+							src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/2016100012575382955.jpg"
+							alt="RIWA 雷瓦 T5 2档家用大功率电吹风2200W">
+					</a>
+					<div class="media-body">
+						<h5><a href="moneyproduct.html?productid=30">RIWA 雷瓦 T5 2档家用大功率电吹风2200W</a></h5>
+						<p class="price">19.9元包邮</p>
+						<span class="from">天猫商城 | 10-25 12:52</span>
+						<span class="comment">评论:5</span>
+					</div>
+				</li>
+			
+			</div>
 	
+			<div class="page clearfix">
+					<a class="prev">
+							上一页
+						</a>
+						<div class="selpage" >
+							第1页<span class="caret"></span>
+						</div>
+					
+						<ul class="pagelist mui-scroll-wrapper">
+							<li><a href="moneyctrl.html?pageid=1">第<em>1</em>/<em>15</em>页</a></li>
+							
+						</ul>
+						
+				 <a class="next">
+							 下一页
+						 </a>
+			</div>
+
+		</main>
+		<footer>
+        <div class="row">
+            <div>
+                <a href="#">登录</a>
+            </div>
+            <div>
+                <a href="#">注册</a>
+            </div>
+            <div>
+                <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+            </div>
+        </div>
+        <p> <a href="#" style="color:red">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+	</div>
 </body>
+
 </html>
+<script type="text/template" id="prolist">
+	{{each result as val index }}
+	<li>
+		<a href="#">
+			{{@val.productImg2}}
+		</a>
+		<div class="media-body">
+			<h5><a href="moneyproduct.html?productid=30">{{val.productName}}</a></h5>
+			<p class="price">{{val.productPinkage}}</p>
+			<span class="from">{{val.productFrom}} | {{val.productTime}}</span>
+			<span class="comment">评论:{{val.productComCount.substring(1,2)}}</span>
+		</div>
+	</li>
+	{{/each}}
+</script>
+
+<script type="text/template" id="pagelist">
+	
+	<a class="prev" href="moneyctrl.html?pageid={{pageid==1?1:pageid-1}}">
+			上一页
+		</a>
+		<div class="selpage" >
+			第{{pageid}}页<span class="caret"></span>
+		</div>
+		<ul class="pagelist mui-scroll-wrapper">
+			<div class="mui-scroll">
+			{{each arr as val index }}
+			<li><a href="moneyctrl.html?pageid={{num-index}}">第<em>{{num-index}}</em>/<em>{{num}}</em>页</a></li>
+			{{/each}}
+			</div>
+		</ul>
+ <a class="next"  href="moneyctrl.html?pageid={{pageid==num?num:pageid+1}}">
+			 下一页
+		 </a>
+	
+</script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../js/commons.js"></script>
+<script src="../js/moneyctrl.js"></script>

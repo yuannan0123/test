@@ -1,0 +1,142 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+.layout {
+  width: 100vw;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.layout header {
+  width: 100%;
+}
+.layout header h1 {
+  height: 50px;
+  background-color: #ff841d;
+  box-sizing: border-box;
+  padding-left: 10px;
+  line-height: 50px;
+}
+.layout main {
+  width: 100%;
+}
+.layout main .prolist {
+  width: 100%;
+}
+.layout main .prolist li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.layout main .prolist li > a {
+  flex: 1;
+}
+.layout main .prolist li > a > img {
+  display: block;
+  width: 90%;
+}
+.layout main .prolist li > div {
+  flex: 2;
+}
+.layout main .prolist li > div h5 {
+  font-size: 14px;
+  margin: 10px 0 7px 0;
+}
+.layout main .prolist li > div p {
+  font-size: 13px;
+  color: red;
+  margin-bottom: 5px;
+}
+.layout main .prolist li > div .from {
+  font-size: 12px;
+  color: #666;
+}
+.layout main .prolist li > div .comment {
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.layout main .page {
+  padding: 10px;
+  position: relative;
+}
+.layout main .page ul {
+  background-color: #fff;
+  width: 88px;
+  z-index: 666;
+  height: 230px;
+  overflow: hidden;
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: none;
+}
+.layout main .page ul li {
+  width: 88px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.layout main .page ul li > a {
+  color: #333;
+  font-size: 12px;
+}
+.layout main .page ul li > a em {
+  color: red;
+}
+.layout main .page > a,
+.layout main .page > div {
+  float: left;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.layout main .page .next {
+  float: right;
+}
+.layout main .page .selpage {
+  padding: 6px 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.layout main .page .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.layout footer {
+  width: 100%;
+}
+.layout footer .row {
+  display: flex;
+}
+.layout footer .row div {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+}
+.layout footer .row div img {
+  width: 15px;
+  height: 15px;
+}
+.layout footer p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
